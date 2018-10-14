@@ -56,6 +56,21 @@ foreach ($squares as $square) {
  */
 ```
 
+It even supports index => value iteration:
+
+```php
+foreach ($squares as $index => $square) {
+    echo $index . ": " . $square . "\n";
+}
+/* Output:
+ * 0: 1
+ * 1: 4
+ * 2: 9
+ * 3: 16
+ * 4: 25
+ */
+```
+
 ### `take($count)`
 
 You can also get take just a certain number of elements from the beginning:
