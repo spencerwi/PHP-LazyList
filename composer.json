@@ -1,0 +1,33 @@
+{
+    "name": "spencerwi/lazylist",
+    "description": "A lazy-lists (fused-streams/generators) library for PHP >7.0",
+    "version": "1.0.0",
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/spencerwi/PHP-LazyList"
+        }
+    ],
+    "keywords": [
+        "lazy", "list", "stream", "generator"
+    ],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Spencer Williams",
+            "email": "spencerwi@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">7.0.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Spencerwi\\": "src"
+        }
+    }
+}
