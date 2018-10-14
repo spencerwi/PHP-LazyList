@@ -78,7 +78,7 @@ $->toArray(); // [1,2,3,4,5]
 
 ```
 
-*BE VERY CAREFUL WITH THIS*, as you can wind up using a generator to create an
+**BE VERY CAREFUL WITH THIS**, as you can wind up using a generator to create an
 infinite list (if your generator never returns null), which *will* cause an 
 infinite loop if you call toArray() on it. Unfortunately, there's no way to know
 ahead of time that a generator is infinite, or else we'd have the list throw an 
@@ -110,7 +110,7 @@ $sum = $l->reduce(1, function($previous, $current) {
 // $sum is now just 1, since the list was empty
 ```
 
-*THIS OPERATION IS "EAGER"*, meaning that *it evaluates the whole list*. As with
-`toArray()`, that means that *if you have an infinite LazyList, `reduce()` will 
-cause an infinite loop.*
+**THIS OPERATION IS "EAGER"**, meaning that **it evaluates the whole list**. As with
+`toArray()`, that means that **if you have an infinite LazyList, `reduce()` will 
+cause an infinite loop.**
 
