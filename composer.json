@@ -30,5 +30,8 @@
         "psr-4": {
             "Spencerwi\\Lazy_list\\": "src"
         }
-    }
+    },
+	"scripts": {
+		"test": "phpunit --bootstrap vendor/autoload.php tests"
+	}
 }

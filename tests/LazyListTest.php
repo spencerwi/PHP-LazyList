@@ -129,7 +129,7 @@ final class LazyListTest extends TestCase {
         /** @var string $result */
         $result = $lazyList->reduce('', fn(string $previous, string $current): string => $previous . $current);
 
-        $this->assertEquals(1, $result);
+        $this->assertEquals('', $result);
     }
 
 	public function test_filter_FromArray(): void
