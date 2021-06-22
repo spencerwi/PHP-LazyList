@@ -1,7 +1,6 @@
 {
     "name": "spencerwi/lazylist",
     "description": "A lazy-lists (fused-streams/generators) library for PHP >7.0",
-    "version": "1.0.0",
     "repositories": [
         {
             "type": "vcs",
