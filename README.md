@@ -13,7 +13,7 @@ Lazy lists can be created from arrays
 $lazyList = \Spencerwi\Lazy_list\LazyList::fromArray([1,2,3,4,5]);
 ```
 
-They can also be created from "generators", which take an index and return 
+They can also be created from callables that take an `int` index and return 
  either some value or else `\Spencerwi\Lazy_list\LazyList::STOP_ITERATION` to 
  signal the end of the list.
 
@@ -126,7 +126,7 @@ and the second element, then on _that_ result and the third element, and so on.
 
 ```php
 $l = \Spencerwi\Lazy_list\LazyList::fromArray([2,3,4]);
-$sum = $l->reduce(1, function($previous, $current) {
+$sum = $l->reduce(1, function(int $previous, int $current) {
   return $previous + $current;
 });
 // $sum is now ((1+2)+3)+4, that is, 10. 
@@ -137,7 +137,7 @@ That's why it's there.
 
 ```php
 $l = \Spencerwi\Lazy_list\LazyList::fromArray([]);
-$sum = $l->reduce(1, function($previous, $current) {
+$sum = $l->reduce(1, function(int $previous, int $current) {
   return $previous + $current;
 });
 // $sum is now just 1, since the list was empty
